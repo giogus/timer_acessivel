@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIAccessibility_Medium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhW-4i-06X">
+                                <rect key="frame" x="135.5" y="272" width="103" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="PsR-NE-9Pq"/>
+                                    <constraint firstAttribute="height" constant="123" id="WpY-Ab-Q7H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGO-wh-AEo">
+                                <rect key="frame" x="115" y="531" width="144" height="81"/>
+                                <accessibility key="accessibilityConfiguration" hint=" " label="Iniciar Contador"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="EUq-G6-3Sm"/>
+                                    <constraint firstAttribute="height" constant="81" id="ja2-v8-vsj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <state key="normal" title="Iniciar"/>
+                                <connections>
+                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJs-Ox-dsj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer Acessível" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6j-ps-BaP">
+                                <rect key="frame" x="114" y="42" width="147" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="VkX-RC-aFk"/>
+                                    <constraint firstAttribute="height" constant="71" id="WB3-Xr-ZIV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CGO-wh-AEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5DA-36-KwN"/>
+                            <constraint firstItem="k6j-ps-BaP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="BZr-Bi-OuM"/>
+                            <constraint firstItem="PhW-4i-06X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C1U-KL-nGD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CGO-wh-AEo" secondAttribute="bottom" constant="55" id="OZI-3V-S7k"/>
+                            <constraint firstItem="PhW-4i-06X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X8h-6F-UCk"/>
+                            <constraint firstItem="PhW-4i-06X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nHT-SE-Tvf"/>
+                            <constraint firstItem="k6j-ps-BaP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9H-oa-hAp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="startButton" destination="CGO-wh-AEo" id="VTK-C1-8Bx"/>
+                        <outlet property="timerLabel" destination="PhW-4i-06X" id="not-cK-0i4"/>
+                        <outlet property="titleLabel" destination="k6j-ps-BaP" id="u9W-NG-Iiu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
